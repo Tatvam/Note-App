@@ -1,7 +1,7 @@
 //console.log('Starting notes.js')
 
 const fs = require('fs');
-
+const chalk = require('chalk');
 var fetchNotes = () => {
         try{
                 var notesString = fs.readFileSync('notes-data.json')
@@ -51,8 +51,8 @@ var removeNote = (title) => {
 };
 var logNote = (note) => {
         console.log('__');
-        console.log(`Title: ${note.title}`);
-        console.log(`Body: ${note.body}`);
+        console.log(chalk.red(`Title: ${note.title}`));
+        console.log(chalk.red(`Body: ${note.body}`));
     };
 module.exports = {
         addNote: addNote,

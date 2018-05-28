@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Tatvam/Note-App#readme",
   "dependencies": {
+    "chalk": "^2.4.1",
     "lodash": "^4.17.10",
     "yargs": "^11.0.0"
   }
